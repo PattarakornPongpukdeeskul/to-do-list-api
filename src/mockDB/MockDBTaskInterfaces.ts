@@ -1,4 +1,4 @@
-import { TaskImpl, TaskProps } from '../Task/schemas'
+import { TaskImpl, TaskProps } from 'Task/schemas'
 
 export interface MockDBTaskInterfaces {
 	create(userId: string, description: string, start: Date, end: Date): TaskImpl

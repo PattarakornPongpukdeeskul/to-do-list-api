@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
-import { TaskModule } from './Task/task.module'
+
+import { TaskModule } from 'Task/task.module'
+
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 

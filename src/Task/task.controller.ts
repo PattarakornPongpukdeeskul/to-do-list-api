@@ -1,6 +1,7 @@
 import { Controller, Delete, Get, Patch, Post, Req, Body, Query } from '@nestjs/common'
 import { Request } from 'express'
-import { CreateTaskDto, FindTaskDto, UpdateDto } from './dto/'
+
+import { CreateTaskDto, FindTaskDto, UpdateDto } from './dto'
 import { TaskService } from './task.service'
 
 @Controller('tasks')

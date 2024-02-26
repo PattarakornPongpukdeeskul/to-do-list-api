@@ -1,7 +1,7 @@
+import { UpdateDto } from 'Task/dto'
+
 import { Task } from './TaskInterfaces'
 import { TaskStatus } from './types'
-
-import { UpdateDto } from '../dto'
 
 export class TaskImpl implements Task {
 	constructor(

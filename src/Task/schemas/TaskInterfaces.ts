@@ -1,6 +1,6 @@
-import { TaskStatus } from './types'
+import { UpdateDto } from 'Task/dto'
 
-import { UpdateDto } from '../dto'
+import { TaskStatus } from './types'
 
 export interface TaskProps {
 	readonly id: string

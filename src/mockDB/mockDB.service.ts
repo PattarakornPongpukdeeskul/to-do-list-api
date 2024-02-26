@@ -1,7 +1,8 @@
 import { v4 as uuid } from 'uuid'
 
+import { TaskProps, TaskImpl, TaskStatus } from 'Task/schemas'
+
 import { MockDBTaskInterfaces } from './MockDBTaskInterfaces'
-import { TaskProps, TaskImpl, TaskStatus } from '../Task/schemas'
 
 export class MockDBTaskImpl implements MockDBTaskInterfaces {
 	private databaseCollection: TaskProps[] = []

@@ -1,7 +1,8 @@
 import { Injectable, Inject } from '@nestjs/common'
 
+import { MockDBTaskImpl } from 'mockDB/mockDB.service'
+
 import { CreateTaskDto, FindTaskDto, UpdateDto } from './dto'
-import { MockDBTaskImpl } from '../mockDB/mockDB.service'
 import { TaskImpl, TaskProps } from './schemas'
 
 @Injectable()

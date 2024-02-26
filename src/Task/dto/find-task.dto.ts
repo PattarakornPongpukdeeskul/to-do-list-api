@@ -2,7 +2,7 @@ import { ApiProperty } from '@nestjs/swagger'
 import { IsDate, IsEnum, IsOptional, IsString } from 'class-validator'
 import { Type } from 'class-transformer'
 
-import { TaskStatus } from '../schemas'
+import { TaskStatus } from 'Task/schemas'
 
 export class FindTaskDto {
 	@ApiProperty({ required: false })
