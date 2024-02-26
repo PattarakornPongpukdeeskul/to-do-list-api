@@ -47,8 +47,9 @@ export class TaskService {
 	}
 
 	private toTransformTask(task: TaskImpl): TaskProps {
-		const { id, createdAt, updatedAt, userId, description, start, end, status } = task
-		return { id, createdAt, updatedAt, userId, description, start, end, status }
+		const { complete, update, ...rest } = task
+
+		return { ...rest }
 	}
 
 	private toTransformTaskAll(tasks: TaskImpl[]): TaskProps[] {
